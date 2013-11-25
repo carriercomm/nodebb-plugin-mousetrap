@@ -1,0 +1,11 @@
+{
+	"id": "nodebb-plugin-mousetrap",
+	"name": "NodeBB Mousetrap Plugin",
+	"description": "This NodeBB plugin allows for keyboard shortcuts for creating new topics, replying to a thread, searching, scrolling up and down the page, open up notifications, mark all topics as read, etc.",
+	"url": "https://github.com/psychobunny/nodebb-plugin-mousetrap",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:scripts.get", "method": "addScripts", "callbacked": false }
+	],
+	"staticDir": "./public"
+}
